@@ -1,0 +1,2 @@
+"    Dueño\nNombre: "+this.severo.getDueño()[0]+" "+this.severo.getDueño()[1]+"\nDireccion: "+this.severo.getDueño()[2]+"\nTelefono: "+this.severo.getDueño()[3]+"\ncedula: "+this.severo.getDueño()[4]
+"     Panaderias\n1. "+this.severo.getPanaderias()[0]+"\n2. "+this.severo.getPanaderias()[1]+"\n3. "+this.severo.getPanaderias()[2]
