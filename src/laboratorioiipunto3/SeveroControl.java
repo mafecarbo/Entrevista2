@@ -15,6 +15,7 @@ import java.awt.event.ActionListener;
 public class SeveroControl implements ActionListener {
      private SeveroFrame frame;
      private PanaderiaFrame panaderia;
+     private SeveroEditarFrame sef;
     public SeveroControl(SeveroFrame severo) {
         this.frame = severo;
     }
@@ -24,7 +25,8 @@ public class SeveroControl implements ActionListener {
         String clave = e.getActionCommand();
       if(clave.equals(this.frame.getEditar().getActionCommand())){
           this.frame.setVisible(false);
-      
+          this.sef= new SeveroEditarFrame();
+          this.sef.setVisible(true);    
       }
       
       if(clave.equals(this.frame.getVolver().getActionCommand())){

@@ -19,18 +19,10 @@ public class LaboratorioIIpunto3 {
     public static void main(String[] args) {
         // TODO code application logic here
         PanaderiaTriunfo p= new PanaderiaTriunfo() {
-            @Override
-            public void Comprar() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-
-            @Override
-            public void Vender() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
         };
         JFrame panaderia = new PanaderiaFrame();
         panaderia.setVisible(true);
+        
     }
     
 }

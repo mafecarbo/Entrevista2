@@ -7,6 +7,7 @@ package laboratorioiipunto3;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -35,7 +36,11 @@ public class SeveroEditarControl implements ActionListener {
             String telefono = this.frame.getTelefonoF().getText();
             String direccion = this.frame.getDireccionF().getText();
             
-            this.severo= new SeveroVelandia();
+            try {
+                this.severo= new SeveroVelandia();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(SeveroEditarControl.class.getName()).log(Level.SEVERE, null, ex);
+            }
             try {
                 this.severo.Editar(nombre, apellido, direccion, telefono, direccion);
             } catch (IOException ex) {
@@ -45,6 +50,11 @@ public class SeveroEditarControl implements ActionListener {
             this.panaderia= new PanaderiaFrame();
             this.panaderia.setVisible(true);
                 
+        }
+        if(comando.equals(this.frame.getVolver().getActionCommand())){
+            this.frame.setVisible(false);
+           this.panaderia = new PanaderiaFrame();
+           this.panaderia.setVisible(true);
         }
     }
 }

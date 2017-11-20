@@ -50,6 +50,11 @@ public class Usuarioscontrol implements ActionListener{
             this.panaderia.setVisible(true);
                 
         }
+        if(comando.equals(this.usuario.getVolver().getActionCommand())){
+            this.usuario.setVisible(false);
+           this.panaderia = new PanaderiaFrame();
+           this.panaderia.setVisible(true);
+        }
         
     }
     

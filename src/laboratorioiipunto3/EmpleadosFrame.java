@@ -23,7 +23,7 @@ public class EmpleadosFrame extends JFrame {
     private JLabel telefono;
     private JLabel cedula;
     private JButton confirmar;
-    
+    private JButton volver;
     private JFormattedTextField nombreF;
     private JFormattedTextField apellidoF;
     private JFormattedTextField direccionF;
@@ -129,7 +129,13 @@ public class EmpleadosFrame extends JFrame {
         this.titulo.setFont(new java.awt.Font("Aparajita", 3, 50));
         this.titulo.setText("Crear Usuario");
         this.titulo.setBounds(300, 100, 400, 50);
-        
+        this.volver = new javax.swing.JButton();
+        getContentPane().add(this.volver);
+        this.volver.setFont(new java.awt.Font("Aparajita", 3, 18));
+        this.volver.setText("Volver");
+        this.volver.setBounds(300, 350, 100, 50);
+        this.volver.setActionCommand("volver");
+        this.volver.addActionListener(control);
         this.jLabel1 = new javax.swing.JLabel();
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pan.png")));
         jLabel1.setPreferredSize(new java.awt.Dimension(700, 500));
@@ -137,6 +143,11 @@ public class EmpleadosFrame extends JFrame {
         jLabel1.setBounds(0, -0, 700, 500);
         
     }
+
+    public JButton getVolver() {
+        return volver;
+    }
+    
 
     public JButton getConfirmar() {
         return confirmar;

@@ -60,7 +60,7 @@ public class SeveroVelandia extends PanaderiaTriunfo {
         while(flujo.hasNextLine() && a<3){
             direccion= flujo.next();
             telefono=flujo.next();
-            panaderias[a]=direccion+" "+telefono;
+            panaderias[a]=direccion+" Tel:"+telefono;
             a++;
         }
     }
@@ -74,13 +74,6 @@ public class SeveroVelandia extends PanaderiaTriunfo {
     }
     
 
-    @Override
-    public void Comprar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
-    @Override
-    public void Vender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }

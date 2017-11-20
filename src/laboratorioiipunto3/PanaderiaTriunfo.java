@@ -17,16 +17,24 @@ public abstract class  PanaderiaTriunfo {
     private  RegistroFrame registar;
     private  InventarioFrame inventario;
     private SeveroFrame severo;
+    private CajaFrame caja;
+    private VentasFrame ventas;
     public  void Inventario(){
         this.inventario = new InventarioFrame();
         this.inventario.setVisible(true);
     };
-    public abstract void Comprar();
+    public void Comprar(){
+        this.caja= new CajaFrame();
+        this.caja.setVisible(true);
+    };
     public  void Registrar(){
         this.registar = new RegistroFrame();
         this.registar.setVisible(true);
     };
-    public abstract void Vender();
+    public  void Vender(){
+        this.ventas= new VentasFrame();
+        this.ventas.setVisible(true);
+    };
     public void Contactos() throws FileNotFoundException{
         this.severo = new SeveroFrame();
         this.severo.setVisible(true);

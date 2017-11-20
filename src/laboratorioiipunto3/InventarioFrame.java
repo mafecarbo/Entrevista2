@@ -6,7 +6,6 @@
 package laboratorioiipunto3;
 
 import java.awt.Color;
-import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -26,6 +25,7 @@ public class InventarioFrame extends JFrame {
     private JLabel jLabel1;
     private InventarioControl control;
     private Inventario inventario;
+    
     public InventarioFrame() {
         IntInventario();
     }
@@ -36,10 +36,10 @@ public class InventarioFrame extends JFrame {
         setFocusable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximizedBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        setMaximumSize(new java.awt.Dimension(700, 400));
-        setMinimumSize(new java.awt.Dimension(700, 400));
-        setPreferredSize(new java.awt.Dimension(700, 400));
-        setSize(new java.awt.Dimension(700, 400));
+        setMaximumSize(new java.awt.Dimension(700, 500));
+        setMinimumSize(new java.awt.Dimension(700, 500));
+        setPreferredSize(new java.awt.Dimension(700, 500));
+        setSize(new java.awt.Dimension(700, 500));
         getContentPane().setLayout(null);
         
         
@@ -47,7 +47,7 @@ public class InventarioFrame extends JFrame {
         getContentPane().add(this.verInventario);
         this.verInventario.setFont(new java.awt.Font("Aparajita", 3, 18));
         this.verInventario.setText("Ver Inventario");
-        this.verInventario.setBounds(200, 150, 150, 50);
+        this.verInventario.setBounds(350, 150, 200, 50);
         this.verInventario.setActionCommand("verInventario");
         this.verInventario.addActionListener(control);
         
@@ -55,7 +55,7 @@ public class InventarioFrame extends JFrame {
         getContentPane().add(this.añadirProducto);
         this.añadirProducto.setFont(new java.awt.Font("Aparajita", 3, 18));
         this.añadirProducto.setText("Añadir Producto");
-        this.añadirProducto.setBounds(400, 150, 150, 50);
+        this.añadirProducto.setBounds(100, 150, 200, 50);
         this.añadirProducto.setActionCommand("añadirProducto");
         this.añadirProducto.addActionListener(control);
 
@@ -63,7 +63,7 @@ public class InventarioFrame extends JFrame {
         getContentPane().add(this.añadirProveedor);
         this.añadirProveedor.setFont(new java.awt.Font("Aparajita", 3, 18));
         this.añadirProveedor.setText("Añadir Proveedor");
-        this.añadirProveedor.setBounds(100, 250, 150, 50);
+        this.añadirProveedor.setBounds(100, 250, 200, 50);
         this.añadirProveedor.setActionCommand("añadirProveedor");
         this.añadirProveedor.addActionListener(control);
 
@@ -71,7 +71,7 @@ public class InventarioFrame extends JFrame {
         getContentPane().add(this.verProveedores);
         this.verProveedores.setFont(new java.awt.Font("Aparajita", 3, 18));
         this.verProveedores.setText("Ver Proveedores");
-        this.verProveedores.setBounds(300, 250, 150, 50);
+        this.verProveedores.setBounds(350, 250, 200, 50);
         this.verProveedores.setActionCommand("verProveedores");
         this.verProveedores.addActionListener(control);
 
@@ -79,7 +79,7 @@ public class InventarioFrame extends JFrame {
         getContentPane().add(this.agotado);
         this.agotado.setFont(new java.awt.Font("Aparajita", 3, 18));
         this.agotado.setText("Agotado");
-        this.agotado.setBounds(500, 250, 150, 50);  
+        this.agotado.setBounds(250, 325, 150, 50);  
         this.agotado.setActionCommand("agotado");
         this.agotado.addActionListener(control);
         
@@ -87,13 +87,13 @@ public class InventarioFrame extends JFrame {
         getContentPane().add(this.titulo);
         this.titulo.setFont(new java.awt.Font("Aparajita", 3, 50));
         this.titulo.setText("Inventario");
-        this.titulo.setBounds(150, 50, 400, 50);
+        this.titulo.setBounds(215, 50, 270, 50);
         
         this.volver = new javax.swing.JButton();
         getContentPane().add(this.volver);
         this.volver.setFont(new java.awt.Font("Aparajita", 3, 18));
         this.volver.setText("Volver");
-        this.volver.setBounds(300, 350, 100, 50);
+        this.volver.setBounds(250, 400, 150, 50);
         this.volver.setActionCommand("volver");
         this.volver.addActionListener(control);
         
@@ -129,4 +129,8 @@ public class InventarioFrame extends JFrame {
         return volver;
     }
     
+    
+    
 }
+    
+

@@ -22,7 +22,7 @@ public class SeveroEditarFrame extends JFrame {
     private JLabel telefono;
     private JLabel cedula;
     private JButton confirmar;
-    
+    private JButton volver;
     private JFormattedTextField nombreF;
     private JFormattedTextField apellidoF;
     private JFormattedTextField direccionF;
@@ -120,6 +120,14 @@ public class SeveroEditarFrame extends JFrame {
         this.confirmar.setBounds(400, 280, 100, 50);
         this.confirmar.setActionCommand("confirmar");
         this.confirmar.addActionListener(control);
+        
+        this.volver = new javax.swing.JButton();
+        getContentPane().add(this.volver);
+        this.volver.setFont(new java.awt.Font("Aparajita", 3, 18));
+        this.volver.setText("Volver");
+        this.volver.setBounds(100, 400, 100, 50);
+        this.volver.setActionCommand("volver");
+        this.volver.addActionListener(control);
 
         
         this.titulo = new javax.swing.JLabel();
@@ -135,6 +143,11 @@ public class SeveroEditarFrame extends JFrame {
         jLabel1.setBounds(0, -0, 700, 500);
         
     }
+
+    public JButton getVolver() {
+        return volver;
+    }
+    
     public JButton getConfirmar() {
         return confirmar;
     }

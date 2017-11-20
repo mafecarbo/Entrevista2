@@ -15,13 +15,30 @@ public class Producto {
     private double precio;
     private double porcentaje;
     private int cantidadM;
+    private String proovedor;
 
-    public Producto(String nombre, int cantidad, double precio, double porcentaje, int cantidadM) {
+    public Producto(String nombre, String proovedor, int cantidad,  int cantidadM,double precio, double porcentaje) {
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.precio = precio;
         this.porcentaje = porcentaje;
         this.cantidadM= cantidadM;
+    }
+
+    public void setCantidadM(int cantidadM) {
+        this.cantidadM = cantidadM;
+    }
+
+    public void setProovedor(String proovedor) {
+        this.proovedor = proovedor;
+    }
+
+    public int getCantidadM() {
+        return cantidadM;
+    }
+
+    public String getProovedor() {
+        return proovedor;
     }
 
     public String getNombre() {

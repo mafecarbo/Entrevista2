@@ -49,5 +49,10 @@ public class Empleadoscontrol implements ActionListener{
             this.panaderia.setVisible(true);
                 
         }
+        if(comando.equals(this.empleado.getVolver().getActionCommand())){
+            this.empleado.setVisible(false);
+           this.panaderia = new PanaderiaFrame();
+           this.panaderia.setVisible(true);
+        }
     }
 }

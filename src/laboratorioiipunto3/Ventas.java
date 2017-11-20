@@ -5,26 +5,12 @@
  */
 package laboratorioiipunto3;
 
+
+
 /**
  *
  * @author myd.abogados
  */
 public class Ventas extends PanaderiaTriunfo {
-
-    
-    @Override
-    public void Comprar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void Vender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void Contactos() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

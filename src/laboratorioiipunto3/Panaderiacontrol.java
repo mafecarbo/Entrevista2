@@ -9,8 +9,7 @@ package laboratorioiipunto3;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  *
@@ -33,25 +32,23 @@ public class Panaderiacontrol implements ActionListener{
             this.frame.setVisible(false);
             this.panaderia=new PanaderiaTriunfo() {
                
-                @Override
-                public void Comprar() {}
-
-                @Override
-                public void Vender() {}
             };
             this.panaderia.Registrar();
       }
       if(clave.equals(this.frame.getComprar().getActionCommand())){
-          
+          this.frame.setVisible(false);
+            this.panaderia=new PanaderiaTriunfo() {    
+
+                
+            };
+            this.panaderia.Comprar();
       }
       if(clave.equals(this.frame.getContactos().getActionCommand())){
           this.frame.setVisible(false);
             this.panaderia=new PanaderiaTriunfo() {    
-                @Override
-                public void Comprar() {}
+                
 
-                @Override
-                public void Vender() {}
+                
             };
             try {
                 this.panaderia.Contactos();
@@ -61,14 +58,18 @@ public class Panaderiacontrol implements ActionListener{
       
       }
       if(clave.equals(this.frame.getVender().getActionCommand())){
+          this.frame.setVisible(false);
+            this.panaderia=new PanaderiaTriunfo() {
+               
+            };
+            this.panaderia.Vender();
       
       }
       if(clave.equals(this.frame.getInventario().getActionCommand())){
         this.frame.setVisible(false);
             this.panaderia=new PanaderiaTriunfo() {
                 
-                @Override
-                public void Comprar() {}
+                
 
                 @Override
                 public void Vender() {}

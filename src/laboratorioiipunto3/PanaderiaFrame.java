@@ -32,22 +32,18 @@ public class PanaderiaFrame extends JFrame{
     
     
     public void IntPanaderia(){
-        this.panaderia=new PanaderiaTriunfo() {
+        this.panaderia=new PanaderiaTriunfo() {};
 
-            @Override
-            public void Comprar() {}
-            @Override
-            public void Vender() {}
-        };
+            
         this.control = new Panaderiacontrol(this);
         setBackground(Color.blue);
         setFocusable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximizedBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        setMaximumSize(new java.awt.Dimension(700, 400));
-        setMinimumSize(new java.awt.Dimension(700, 400));
-        setPreferredSize(new java.awt.Dimension(700, 400));
-        setSize(new java.awt.Dimension(700, 400));
+        setMaximumSize(new java.awt.Dimension(800, 600));
+        setMinimumSize(new java.awt.Dimension(800, 600));
+        setPreferredSize(new java.awt.Dimension(800, 600));
+        setSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(null);
         
         

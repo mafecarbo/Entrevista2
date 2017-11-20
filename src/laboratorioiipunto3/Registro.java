@@ -39,13 +39,6 @@ public class Registro extends PanaderiaTriunfo{
             fr.write(cedula+" \r\n");
         }
     }
-    @Override
-    public void Comprar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    @Override
-    public void Vender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }
