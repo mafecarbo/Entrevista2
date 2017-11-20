@@ -1,1 +1,4 @@
 pepito perez cll160 123 123
+
+Nombre Apellido Direccion Nombre Cedula 
+Nombre Apellido Direccion Nombre Cedula 
